@@ -129,7 +129,7 @@ import ScrollReveal from 'scrollreveal';
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, maiores. Voluptas, perspiciatis eius facere illum harum, vel dicta unde, alias veritatis facilis beatae maiores. Aliquid id explicabo dolores porro quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione itaque repellat voluptate iusto libero eum odio eveniet doloremque accusantium cupiditate, neque nam aspernatur laborum, iure dolores quae ducimus necessitatibus.</p>
                         <a href="#" className='btn mt-3'>About us</a>
                     </div>
-                    <div className="restaurant-info-img animate-right">
+                    <div className="restaurant-info-img animate-right mt-5">
                         <img src={ourStoryImg} className='img mb-3' alt="" />
                     </div>
 
@@ -157,7 +157,7 @@ import ScrollReveal from 'scrollreveal';
         <div className="container text-center">
         <div className="restaurant-info">
 
-        <div className="img-group animate-left">
+        <div className="img-group animate-left mt-5">
                     <img src={menuGroupOne} className='img ' alt="" />
                     <img src={menuGroupTwo} className='img ' alt="" />
                     <img src={menuGroupThree} className='img ' alt="" />
