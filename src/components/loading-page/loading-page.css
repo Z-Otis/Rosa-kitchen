@@ -97,6 +97,9 @@ margin-top: -4rem;
     background-size: cover;
     
 }
+section{
+    overflow: hidden;
+}
 
 
 .between {
