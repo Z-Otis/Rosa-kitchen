@@ -15,6 +15,10 @@ import delightTwo from "../../images/delight-group-2.jpg"
 
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
+import { useAuth0 } from "@auth0/auth0-react";
+
+
+ 
 
 
   
@@ -24,6 +28,7 @@ import ScrollReveal from 'scrollreveal';
 
  const LoadingPage = () => {
     const navigate = useNavigate();
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
     useEffect(() => {
         // Initialize ScrollReveal
         ScrollReveal().reveal('.animate-left', {
@@ -65,6 +70,8 @@ import ScrollReveal from 'scrollreveal';
         });
       }, []);
 
+
+      
     return <main>
         <div className='hero' id='hero'>
         
@@ -89,7 +96,10 @@ import ScrollReveal from 'scrollreveal';
           <Nav.Link href="#">CONTACT</Nav.Link>
           </Nav>
             <div className='d-flex justify-content-start align-items-center gap-2' >
-         <a href="#" className='text-white' >Signin</a>
+            !isAUthenticated &&(
+                <button onClick={() => loginWithRedirect()} className='text-white btns border-0 py-1 px-3'> <a href="#" >Signin</a></button>
+            )
+           
         <button className='text-white btns border-0 py-1 px-3'> <a href="#" >Signup</a></button>
             </div>
          </Navbar.Collapse>
